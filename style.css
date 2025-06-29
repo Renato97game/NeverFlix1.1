@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -374,4 +375,382 @@ body {
 
 .fire {
     width: 100px;
+=======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+    /* espaço entre o ícone e o texto */
+
+body {
+  background-image: url('images/bg.jpg');
+  background: #111;
+  color: white;
+   font-family: "Poppins", sans-serif;
+}
+
+
+
+.section-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  gap: 8px;
+}
+
+.icon-svg {
+  width: 24px;
+  height: 24px;
+  fill: #fe1242;
+}
+
+.tag-novo {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.tag-novo img {
+  width: 160px;
+  border-radius: 8px;
+}
+
+.badge-novo {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: red;
+  color: white;
+  font-size: 8px;
+  font-weight: bold;
+  padding: 4px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.carousel-section {
+  padding: 20px;
+  margin-bottom: 5px;
+}
+
+.carousel-title {
+  font-size: 1.0rem;
+  margin-bottom: 10px;
+}
+
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.carousel-item {
+  width: 280px; /* controle fixo da largura */
+  height: 135px; /* altura proporcional ao landscape */
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+
+.carousel-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .carousel-item {
+    min-width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-item {
+    min-width: 140px;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+  background-color: #111;
+  width: 100%;
+  padding: 5px 10px;
+  z-index: 4;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 10vh;
+  filter: brightness(90%);
+}
+
+.banner-carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.banner-slide {
+  min-width: 100%;
+  position: relative;
+  display: none;
+}
+
+.banner-slide.active {
+  display: block;
+}
+
+.banner-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.banner-content {
+  position: absolute;
+  left: 5%;
+  bottom: 20%;
+  color: white;
+  z-index: 2;
+  text-shadow: 1px 1px 4px #000;
+}
+
+.banner-content h1 {
+  font-size: 2.5rem;
+  text-transform: lowercase;
+  line-height: 1.2;
+}
+
+.banner-content p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.prime-icon {
+  margin-right: 5px;
+}
+
+.banner-dots {
+   margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #888;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: white;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+
+  .banner-content p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .banner-content p {
+    font-size: 0.8rem;
+  }
+}
+
+
+.filme {
+  position: relative;
+  display: inline-block;
+}
+
+/* Selo fixo no canto da imagem */
+.selo-fixo {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: red;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 5px;
+  border-radius: 2px;
+  z-index: 2;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+}
+
+
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.icone-h3 {
+  width: 1em;            /* mesmo tamanho da fonte do h3 */
+  height: 1em;
+  vertical-align: middle; /* alinha verticalmente ao texto */
+  margin-right: 8px; 
+}
+
+.destaque {
+  position: absolute;
+  top: 10px;
+  RIGHT: 10px;
+  background-color: #fe0037;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 5px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  z-index: 1;
+}
+
+/*  */
+
+.nav-links li a:hover {
+  color: #1db954; /* verde estilo Spotify/Netflix */
+}
+
+/* Responsivo para telas pequenas */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+}
+
+.top-banner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.top-banner img {
+  width: 100%;     /* Responsivo: ocupa 100% da largura disponível */
+  height: auto;    /* Mantém a proporção original da imagem */
+  display: block;  /* Remove espaços extras embaixo da imagem */
+  filter: brightness(70%);
+}
+
+/* Conteúdo */
+.content {
+  padding: 10px;
+}
+.carousel h3 {
+  margin: 10px 0;
+  padding-left: 10px;
+}
+.row {
+  display: flex;
+  overflow-x: scroll;
+  gap: 10px;
+}
+.row img {
+  width: 130px;
+  border-radius: 5px;
+}
+
+/* Menu inferior */
+/* .bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #ff0000;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid #222;
+} */
+.bottom-nav a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 18px;
+}
+.bottom-nav a.active {
+  color: white;
+}
+
+.botao-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.botao-animado {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #fe1242;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.botao-animado:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #e50914aa;
+}
+
+.fire {
+    width: 100px;
+>>>>>>> b9f3d290e26eab406db5b3c6524e7368b13e33dd
 }
