@@ -134,11 +134,11 @@
    justify-content: space-between;
  }
 
- .banner-wrapper {
+ .bbb {
    position: relative;
    width: 100%;
    overflow: hidden;
-   margin-top: 10vh;
+   margin-top: 5vh;
    filter: brightness(90%);
  }
 
