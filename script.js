@@ -30,3 +30,29 @@ dots.forEach((dot, index) => {
 });
 
 setInterval(nextSlide, 5000);
+
+
+
+
+// Alternar menu hambúrguer
+const toggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
+
+toggle.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});
+
+// Rolagem suave ao clicar na logo
+const logoLink = document.getElementById('logo-link');
+
+logoLink.addEventListener('click', (e) => {
+  e.preventDefault(); // Impede o salto instantâneo
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+
+
+
