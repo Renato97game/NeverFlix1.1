@@ -56,3 +56,24 @@ logoLink.addEventListener('click', (e) => {
 
 
 
+document.getElementById('search-button').addEventListener('click', function() {
+    let input = document.getElementById('search-input').value.toLowerCase();
+    let filmes = document.querySelectorAll('.tag-novo');
+
+    filmes.forEach(function(filme) {
+        let titulo = filme.querySelector('img').alt.toLowerCase();
+
+        if (titulo.includes(input)) {
+            filme.style.display = 'inline-block';
+        } else {
+            filme.style.display = 'none';
+        }
+    });
+});
+
+// Permitir busca ao pressionar Enter
+document.getElementById('search-input').addEventListener('keyup', function(e) {
+    if (e.key === 'Enter') {
+        document.getElementById('search-button').click();
+    }
+});
