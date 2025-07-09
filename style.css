@@ -209,7 +209,7 @@ header {
    position: absolute;
    top: 8px;
    right: 8px;
-   background-color: #911134;
+   background-color: #fe1242;
    color: white;
    font-size: 8px;
    font-weight: bold;
@@ -406,7 +406,7 @@ header {
    position: absolute;
    top: 8px;
    right: 8px;
-   background-color: #911134;
+   background-color: #fe1242;
    color: white;
    font-size: 10px;
    font-weight: bold;
@@ -437,7 +437,7 @@ header {
    position: absolute;
    top: 10px;
    RIGHT: 10px;
-   background-color: #fe0037;
+   background-color: #fe1242;
    color: white;
    font-size: 10px;
    font-weight: bold;
@@ -538,7 +538,7 @@ header {
 
  .botao-animado:hover {
    transform: scale(1.1);
-   box-shadow: 0 0 15px #e50914aa;
+   box-shadow: 0 0 15px #fe1242;
  }
 
  .fire {
@@ -590,7 +590,7 @@ header {
    position: absolute;
    top: 8px;
    right: 8px;
-   background-color: red;
+   background-color: #fe1242;
    color: white;
    font-size: 8px;
    font-weight: bold;
@@ -787,7 +787,7 @@ header {
    position: absolute;
    top: 8px;
    right: 8px;
-   background-color: red;
+   background-color: #fe1242;
    color: white;
    font-size: 10px;
    font-weight: bold;
@@ -818,7 +818,7 @@ header {
    position: absolute;
    top: 10px;
    RIGHT: 10px;
-   background-color: #fe0037;
+   background-color: #fe1242;
    color: white;
    font-size: 10px;
    font-weight: bold;
